@@ -49,7 +49,7 @@
   </context-param>
   <context-param>
     <param-name>webAppRootKey</param-name>
-    <param-value>springMVCProject.root</param-value>
+    <param-value>SLSaleSystem.root</param-value>
   </context-param>
   <listener>
     <listener-class>
