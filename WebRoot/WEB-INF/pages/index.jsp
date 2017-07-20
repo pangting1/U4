@@ -1,4 +1,4 @@
-<%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
+<%@ page language="java" contentType="text/html; charset=utf-8" import="java.util.*"  pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -90,8 +90,8 @@ body {
 
 							<!--  <div class="input-prepend">
 							<label class="remember" for="remember"><input type="checkbox" id="remember" />Remember me</label>
-							</div>
-							<div class="clearfix"></div>-->
+							</div>-->
+							<div class="clearfix"></div>
 
 							<p class="center span5">
 							<button type="submit" class="btn btn-primary" id="loginBtn">登录</button>
@@ -181,7 +181,7 @@ body {
 	<script src="/statics/js/jquery.history.js"></script>
 	<!-- application script for Charisma demo -->
 	<script src="/statics/js/charisma.js"></script>
-	<script src="/statics/localjs/index.js"></script>
+	<!--  <script src="/statics/localjs/index.js"></script>-->
 
 </body>
 </html>
