@@ -1,6 +1,7 @@
 /WebRoot
 /.classpath
 /.mymetadata
+/.myumldata
 /.project
 /.settings
 /applicationContext-mybatis.xml

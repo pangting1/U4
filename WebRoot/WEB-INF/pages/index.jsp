@@ -1,17 +1,7 @@
-<%@ page language="java" contentType="text/html; charset=utf-8" import="java.util.*"  pageEncoding="UTF-8"%>
+<%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
-<html lang="en">
+<html >
 <head>
-<!--
-		Charisma v1.0.0
-
-		Copyright 2012 Muhammad Usman
-		Licensed under the Apache License v2.0
-		http://www.apache.org/licenses/LICENSE-2.0
-
-		http://usman.it
-		http://twitter.com/halalit_usman
-	-->
 <meta charset="utf-8">
 <title>SL会员商城</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -78,7 +68,7 @@ body {
 						<fieldset>
 							<div class="input-prepend" title="登录账号" data-rel="tooltip">
 								<span class="add-on"><i class="icon-user"></i></span>
-								<input autofocus class="input-large span10" name="loginCode" id="username" type="text" value="" />
+								<input autofocus class="input-large span10" name="loginCode" id="loginCode" type="text" value="" />
 							</div>
 							<div class="clearfix"></div>
 
@@ -92,7 +82,7 @@ body {
 							<label class="remember" for="remember"><input type="checkbox" id="remember" />Remember me</label>
 							</div>-->
 							<div class="clearfix"></div>
-
+							<ul id="formtip"></ul>
 							<p class="center span5">
 							<button type="submit" class="btn btn-primary" id="loginBtn">登录</button>
 							</p>
@@ -181,7 +171,7 @@ body {
 	<script src="/statics/js/jquery.history.js"></script>
 	<!-- application script for Charisma demo -->
 	<script src="/statics/js/charisma.js"></script>
-	<!--  <script src="/statics/localjs/index.js"></script>-->
+	<script src="/statics/localjs/index.js"></script>
 
 </body>
 </html>

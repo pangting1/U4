@@ -1,4 +1,52 @@
 $(document).ready(function(){
+	
+/**
+ * menuList ass start
+ */	
+
+	var result="";
+	var json=eval('('+tt+')');
+	alert(tt);
+	for(var i=0;i<json.length;i++){
+		//config main menu
+		result=result+'<li class="nav-header hidden-tablet" onclick="$(\'#test'+i+'\').toggle(500);">'+json[i].mainMenu.functionName+'</li>'
+		//config sub menus
+		result=result+"<li><ul class=\"nav nav-tabs nav-stacked\" id=\"test"+i+"\">"
+		for(var j=0;j<json[i].subMenu.length;j++){
+			var pic;
+			switch(j){
+			case 0:
+				pic="icon-home";break;
+			case 1:
+				pic="icon-eye-open";break;
+			case 2:
+				pic="icon-edit";break;
+			case 3:
+				pic="icon-list-alt";break;
+			case 4:
+				pic="icon-font";break
+			case 5:
+				pic="icon-picture";break;
+			default:
+				pic="icon-picture";break;
+			}
+			result=result+"<li><a class=\"ajax-link\" href=\""+json[i].subMenu[j].funcUrl+"\"><i class=\""+pic+"\"></i><span class=\"hidden-tablet\">"+json[i].subMenu[j].functionName+"</span></a></li>"
+		}
+		result=result+"</ul></li>";
+	}
+	$("#menus").append(result)
+	/**
+	 * menuList ass end
+	 */
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	//themes, change CSS with JS
 	//default theme(CSS) is cerulean, change it if needed
 	var current_theme = $.cookie('current_theme')==null ? 'cerulean' :$.cookie('current_theme');
@@ -18,7 +66,7 @@ $(document).ready(function(){
 	
 	function switch_theme(theme_name)
 	{
-		$('#bs-css').attr('href','css/bootstrap-'+theme_name+'.css');
+		$('#bs-css').attr('href','/statics/css/bootstrap-'+theme_name+'.css');
 	}
 	
 	//ajax menu checkbox
